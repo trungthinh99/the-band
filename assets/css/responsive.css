@@ -1,0 +1,9 @@
+@media screen and (max-width: 740px) {
+    #nav > li {
+        display: block; /* cho menu xổ xuống theo chiều dọc */
+    }
+
+    #header .search-btn { 
+        display: none; /* ẩn đi nút kính lúp tìm kiếm */
+    }
+}
