@@ -1,6 +1,18 @@
 @media screen and (max-width: 740px) {
+    #header {
+        overflow: hidden; /* ẩn hết những gì thừa ra khỏi phạm vi của nó (cụ thể là ẩn khỏi height: 46px) */
+    }
+    
+    #header .mobile-menu-btn {
+        display: block; /* hiện trên mobile - ghi đề display: none */
+    }
+    
+    #header .search-btn { 
+        display: none; /* ẩn đi nút kính lúp tìm kiếm */
+    }
+
     #nav {
-        display: block;
+        display: block; /* hiển thị dạng block - kéo dài màu của thanh menu */
     }
     
     #nav > li {
@@ -8,14 +20,17 @@
     }
 
     #nav > li:first-child {
-        display: inline-block;
+        display: inline-block; /* phần home không kéo dài thanh màu tràn nav */
     }
 
-    #header .mobile-menu-btn {
-        display: block;
+    #nav .subnav {
+        position: initial; /* ghi đè thuộc tính position: absolute - cho xổ hẳn xuống dưới, không cần đè lên */
+        background-color: #333;
     }
 
-    #header .search-btn { 
-        display: none; /* ẩn đi nút kính lúp tìm kiếm */
-    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px
+    }  
+    /* Chiều cao tối thiểu để ngón tay có thể bấm và tương tác là 42px - 48px */
 }

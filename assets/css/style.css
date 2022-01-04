@@ -106,7 +106,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1; /* thuộc tính ưu tiên về độ sâu của postion, cho position của header ưu tiên nổi lên trên so với thằng khác*/
-    overflow: hidden; /* ẩn hết những gì thừa ra khỏi phạm vi của nó (cụ thể là ẩn khỏi height: 46px) */
 }
 
 #nav {
@@ -176,7 +175,7 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
+    display: none; /* trên PC không hiện */
 }
 
 #header .mobile-menu-btn,

@@ -222,7 +222,13 @@
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
             menuItem.onclick = function() {
-                header.style.height = null;
+                // Nếu menu có cấp nhỏ hơn VÀ chứa class là subnav thì gán nó vào biến isParentMenu
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); 
+                if (isParentMenu) {
+                    event.preventDefault(); // nếu là parent menu thì bỏ đi hành vi mặc định (hình vi href="#")
+                } else { 
+                    header.style.height = null; // còn không thì ẩn cái menu đi
+                }
             }
         }
     </script>
