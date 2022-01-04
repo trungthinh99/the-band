@@ -1,6 +1,18 @@
 @media screen and (max-width: 740px) {
+    #nav {
+        display: block;
+    }
+    
     #nav > li {
         display: block; /* cho menu xổ xuống theo chiều dọc */
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
     }
 
     #header .search-btn { 
