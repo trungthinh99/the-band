@@ -33,4 +33,23 @@
         padding: 5px 40px
     }  
     /* Chiều cao tối thiểu để ngón tay có thể bấm và tương tác là 42px - 48px */
+
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .place-item {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .places-list {
+        margin-top: 16px;
+    }
+
 }
