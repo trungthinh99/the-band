@@ -1,3 +1,24 @@
+/* Tablet & Mobiel - Reponsive cho cả tablet và mobile */  
+@media screen and (max-width: 1023px) {
+    .btn {
+        padding: 16px 16px; /* Tăng kích thước nút cao lên 48px tăng cảm giác bấm trên mobile và tablet */
+    } 
+
+    #footer .socials {
+        font-size: 28px; /* tăng kích thước item social */
+    }
+
+    #footer .socials a {
+        margin: 0 8px; /* tăng khoảng cách giữa các item social để không bị bấm nhầm */
+    }
+
+    #footer .copyright a {
+        padding: 11px 0; /* tăng kích thước chạm vào đường link */
+        display: inline-block; /* dịch khối copyright xuống */
+    }
+}
+
+/* Mobile */
 @media screen and (max-width: 740px) {
     .s-full-width, /* tăng chiều dài nút bấm để phù hợp thiết kế mobile */
     .s-col-full {  /* ý nghĩa đặt tên: chia cột full màn hình với size s (mobie) */

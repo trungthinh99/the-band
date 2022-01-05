@@ -470,12 +470,21 @@ html {
 
 .contact-info {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.8;
 }
 
 .contact-info i { /* Nâng cao:.contact-info i[class*="ti-"] */
     width: 30px; /* Có thể dùng margin hoặc padding nhưng sẽ không tạo sự thẳng cột cho chữ, nên dùng width */
     display: inline-block;
+}
+
+.contact-info a {
+    color: #1a11ef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
