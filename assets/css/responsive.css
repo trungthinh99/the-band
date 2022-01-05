@@ -1,4 +1,13 @@
 @media screen and (max-width: 740px) {
+    .s-full-width, /* tăng chiều dài nút bấm để phù hợp thiết kế mobile */
+    .s-col-full {  /* ý nghĩa đặt tên: chia cột full màn hình với size s (mobie) */
+        width: 100% !important; /* class chung dùng để dàn full 100% chiều ngang của đối tượng trên màn hình mobile */
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+    
     #header {
         overflow: hidden; /* ẩn hết những gì thừa ra khỏi phạm vi của nó (cụ thể là ẩn khỏi height: 46px) */
     }
@@ -40,16 +49,19 @@
     }
 
     #content .member-img {
-        width: 60%;
+        width: 60%; /* ghi đè cho kích thước ảnh member lên 60% */
     }
 
     .place-item {
-        margin-top: 16px;
-        width: 100%;
+        margin-top: 16px; /* mỗi place item cách nhau 16px*/
+        width: 100%; /* dàn full màn hình mobile 100% */
     }
 
     .places-list {
-        margin-top: 16px;
+        margin-top: 16px; /* đẩy khối ticket-list lên trên cách places-list 16px  */
     }
 
+    .contact-form {
+        margin-top: 16px; /* đẩy khối contact-info lên trên cách contact-form 16px */
+    }
 }
