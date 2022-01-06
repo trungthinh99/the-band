@@ -1,3 +1,6 @@
+/* Khuyến cáo dùng đơn vị của max/min width trong media query là em thay vì px vì theo kết quả nghiên cứu nó ít lỗi hơn
+trên các trình duyệt khác nhay. Để đổi từ px sang em search google: px to em */
+
 /* Tablet & Mobiel - Reponsive cho cả tablet và mobile */  
 @media screen and (max-width: 1023px) {
     .btn {
@@ -19,7 +22,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 739px) {
     .s-full-width, /* tăng chiều dài nút bấm để phù hợp thiết kế mobile */
     .s-col-full {  /* ý nghĩa đặt tên: chia cột full màn hình với size s (mobie) */
         width: 100% !important; /* class chung dùng để dàn full 100% chiều ngang của đối tượng trên màn hình mobile */

@@ -203,7 +203,8 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%; /* Ghí nhớ: % chiều ngang của chính nó, ở đây là đơn vị px thì padding như bth  */
-    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    /* sửa file tĩnh thành link tương đối: ../ nhảy ra thư mục cùng cấp */
     /* Thuộc tính của background viết theo kiểu shorthand theo thứ tự: url ảnh -> vị trí -> kích thước -> kiểu dáng */
 }
 
@@ -223,6 +224,7 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000; /* google: text shadow css property để hiểu thêm*/
 }
 
 
